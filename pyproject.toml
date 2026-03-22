@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-threatlab"
+version = "0.1.0"
+description = "Open-source framework for testing AI agent and LLM threat scenarios"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Ravi Indra"}
+]
+license = {text = "MIT"}
+dependencies = [
+  "pyyaml>=6.0",
+  "pydantic>=2.7",
+  "rich>=13.7"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6"
+]
+
+[project.scripts]
+agent-threatlab = "agent_threatlab.cli:main"
+agent-threatlab-dashboard = "agent_threatlab.dashboard:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

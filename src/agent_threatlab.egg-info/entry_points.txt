@@ -1,0 +1,2 @@
+[console_scripts]
+agent-threatlab = agent_threatlab.cli:main

@@ -1,0 +1,7 @@
+pyyaml>=6.0
+pydantic>=2.7
+rich>=13.7
+
+[dev]
+pytest>=8.0
+ruff>=0.6
